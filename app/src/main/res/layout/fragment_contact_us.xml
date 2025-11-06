@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactUsFragment"
+    android:background="@color/white"
+    android:paddingHorizontal="30dp"
+    android:paddingVertical="10dp">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".activities.AddProductActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Home"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_home"
+                android:layout_alignParentStart="true"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical">
+               <RelativeLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/relative1"
+                   android:layout_gravity="center"
+                   >
+                   <TextView
+                       android:id="@+id/aboutus"
+                       android:layout_width="140dp"
+                       android:layout_height="30dp"
+                       android:layout_centerHorizontal="true"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:background="@drawable/bg_et"
+                       android:gravity="center"
+                       android:text="Contact Us"
+                       android:textSize="15sp"
+                       android:textStyle="bold" />
+
+               </RelativeLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:background="@drawable/bg_layout"
+                   android:layout_marginTop="5dp">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Renad Alotaibi"
+                   android:textSize="16sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:layout_centerHorizontal="true"
+                   android:gravity="center"
+                   android:layout_marginTop="10dp"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_alignParentLeft="true"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="#DFC645"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_mail"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:text="Renad@gmail.com"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout1"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_centerInParent="true"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginLeft="20dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="@color/white"
+                       android:gravity="center">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_facebook" />
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerInParent="true"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_toRightOf="@id/layout1"
+                       android:fontFamily="@font/poppins"
+                       android:text="Renad Alotaibi"
+                       android:textColor="@color/black"
+                       android:textSize="14sp" />
+
+               </RelativeLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:background="@drawable/bg_layout"
+                   android:layout_marginTop="10dp">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Yara badr Alshbrami"
+                   android:textSize="16sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_marginTop="10dp"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout2"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="#DFC645"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_mail"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Yara @gmail.com"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout2"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout3"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="@color/white"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_facebook"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Yara badr Alshbrami"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout3"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+               </LinearLayout>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:background="@drawable/bg_layout"
+                   android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Ghada Alkhalaf"
+                   android:textSize="16sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_marginTop="10dp"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout4"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="#DFC645"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_mail"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Ghada@gmail.com"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout4"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout5"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="@color/white"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_facebook"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Ghada Alkhalaf"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout5"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+               </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_layout"
+                android:orientation="vertical">
+            <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="fulwh Ali aldwirej"
+                   android:textSize="16sp"
+                   android:textColor="@color/black"
+                   android:fontFamily="@font/poppins"
+                   android:textStyle="bold"
+                   android:gravity="center"
+                   android:layout_marginTop="10dp"/>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout6"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="#DFC645"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="20dp"
+                           android:layout_height="20dp"
+                           android:src="@drawable/ic_mail"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="fulwh@gmail.com"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout6"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="47dp"
+                   android:layout_marginTop="5dp">
+
+                   <RelativeLayout
+                       android:id="@+id/layout7"
+                       android:layout_width="28dp"
+                       android:layout_height="28dp"
+                       android:background="@drawable/bg_btn_round"
+                       android:backgroundTint="@color/white"
+                       android:layout_centerInParent="true"
+                       android:layout_alignParentStart="true"
+                       android:gravity="center"
+                       android:layout_marginStart="20dp">
+
+                       <ImageView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_facebook"/>
+
+                   </RelativeLayout>
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="fulwh Ali aldwire"
+                       android:textSize="14sp"
+                       android:fontFamily="@font/poppins"
+                       android:textColor="@color/black"
+                       android:layout_centerInParent="true"
+                       android:layout_toRightOf="@id/layout7"
+                       android:layout_marginStart="20dp"/>
+
+               </RelativeLayout>
+            </LinearLayout>
+
+           </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

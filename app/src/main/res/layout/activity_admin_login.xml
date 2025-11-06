@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AdminLoginActivity"
+    android:gravity="center"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/AdminName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="User Name"
+        android:textColorHint="@color/hint_color"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:background="@drawable/bg_et"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="70dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/AdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:textColorHint="@color/hint_color"
+        android:fontFamily="@font/poppins"
+        android:textSize="16sp"
+        android:background="@drawable/bg_et"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_btn"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>
